@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    background-image: url(./imagen/mountains-440520_1280.jpg);
+    height: 250px;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+.nav_container{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img{
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(243, 122, 8);
+    border-radius: 80px;
+    background-image: url(./imagen/IMG_20200218_215444.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.nav_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    gap: 17px;}
+
+h1{
+    color: aliceblue;
+    display: inline-block;}
+
+
+
+.nav_menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2em;}
+
+.nav_item{
+    color: #5a5757db;
+    text-decoration: none;
+    --clippy: polygon  (0 0  , 0 0 , 0 100% , 0 0% )}
+
+.navlabel{
+        display: block;
+        cursor: pointer;}
+    
+.nav_menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: rgb(255, 0, 0);
+        width: 100vw;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: polygon(0 0, 100% 0 , 100% 0, 0 0 );
+        transition: clip-path 1s ease-in-out;}
+    
+.nav_input:checked + .nav_menu{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+    
+
+
+/* .nav_input{   */
+    display: none;
+}
+
+
+
+
+
+
+    
